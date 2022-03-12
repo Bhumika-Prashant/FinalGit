@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     @IBAction func saveButtonClicked(_ sender: UIButton) {
         
         defaults.set(nameTextField.text!, forKey: nameKey)   // value -> Any?
-        defaults.set(birthdayTextField.text!, forKey: birthdayKey)
+        defaults.set(birthdayTextField.text!, forKey: birthdayKey)  // UserDefaults
         
         nameLabel.text = "Name: \(nameTextField.text!)"
         birthdayLabel.text = "Birthday: \(birthdayTextField.text!)"
