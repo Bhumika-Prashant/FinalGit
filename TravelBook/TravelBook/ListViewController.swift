@@ -37,5 +37,8 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toViewController", sender: self)
+    }
     
 }
